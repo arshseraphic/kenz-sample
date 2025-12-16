@@ -12,7 +12,7 @@
     "cookie": "^1.0.2",
     "country-state-city": "^3.2.1",
     "js-cookie": "^3.0.5",
-    "next": "15.5.2",
+    "next": "15.5.9",
     "react": "19.1.0",
     "react-datepicker": "^8.7.0",
     "react-dom": "19.1.0",
