@@ -1,0 +1,229 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  background-color: white;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+/* Global font class for Poppins */
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-lato {
+  font-family: var(--font-lato);
+}
+/* .font-playball {
+  font-family: var(--font-playball), cursive !important;
+}
+.font-ebgaramond {
+  font-family: var(--font-ebgaramond), serif !important;
+}
+
+.font-lateef {
+  font-family: var(--font-lateef), cursive;
+}
+. {
+  font-family: var(--), sans-serif !important;
+} */
+.breadcrumbs {
+  /* font-family: var(--), sans-serif !important; */
+}
+
+.bg-beige-gradient {
+  background: linear-gradient(
+    to right,
+    #f8f1eb 0%,
+    rgba(248, 241, 235, 0.78) 30%,
+    rgba(248, 241, 235, 0.41) 50%,
+    rgba(248, 241, 235, 0.27) 70%,
+    rgba(248, 241, 235, 0) 100%
+  );
+}
+.image-gradient {
+  margin-top: auto;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.74) 82.19%
+  );
+  background: linear-gradient(
+    to bottom,
+  );
+}
+.image-gradient-blue {
+  margin-top: auto;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(1, 63, 232, 0.54) 82.19%
+  );
+  background: linear-gradient(
+    to bottom,
+  );
+}
+
+.gradient-right {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    /* fully black at right */ rgba(0, 0, 0, 0.8393) 20%,
+    /* ~83.93% opacity */ rgba(0, 0, 0, 0.6755) 25%,
+    /* ~67.55% opacity */ rgba(0, 0, 0, 0) 60% /* transparent at left */
+  );
+}
+@media screen and (max-width: 768px) {
+  .gradient-right {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,
+      /* fully black at right */ rgba(0, 0, 0, 0.8393) 20%,
+      /* ~83.93% opacity */ rgba(0, 0, 0, 0.6755) 40%,
+      /* ~67.55% opacity */ rgba(0, 0, 0, 0) 100% /* transparent at left */
+    );
+  }
+}
+
+button {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.react-tel-input .country-list .country {
+  color: #272622 !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: transparent !important;
+}
+
+.react-tel-input .selected-flag:hover {
+  background-color: transparent !important;
+}
+
+.react-tel-input .form-control {
+  color: #272622;
+}
+.react-tel-input .country-list {
+  max-height: 136px !important;
+}
+
+body ::selection {
+  background-color: #272622; /* highlight background */
+  color: #ffffff; /* highlight text color */
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: static;
+  padding-top: 4px;
+}
+.swiper-pagination-bullet-active {
+  background: #272622 !important;
+}
+.menu :where(li) > :not(:is(ul, .menu-title, details, .btn)):active {
+  color: #272622 !important;
+  background-color: transparent !important;
+}
+
+.dynamic-padding {
+  padding-top: 153px;
+}
+
+@media (min-width: 1024px) {
+  .dynamic-padding {
+    padding-top: 132px;
+  }
+}
+.navbar-item {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Text color on hover */
+.navbar-item span {
+  font-weight: 400;
+}
+
+.navbar-item:hover span {
+  color: #000000 !important;
+  /* font-weight: 500 !important;  */
+}
+
+/* Animated underline effect */
+.navbar-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #ffca6d;
+  border-radius: 2px; /* ✅ makes the underline rounded */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Animate underline from center */
+.navbar-item:hover::after {
+  width: 100%;
+}
+
+/* Hide Next.js development overlay badge */
+#__next-build-watcher,
+#__next-build-error-overlay,
+#__next-dev-overlay,
+.nextjs-dev-overlay,
+[data-nextjs-build-watcher],
+[data-nextjs-dev-overlay],
+[data-next-dev-overlay] {
+  display: none !important;
+}
+
+.modal-box {
+  border-radius: 18px;
+}
+
+/* .mySwiper .swiper-slide {
+  transition: all 0.5s ease;
+  opacity: 0.6;
+  transform: scale(0.94);
+}
+
+.mySwiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+} */
+
+/* @layer utilities { */
+/* Custom 3xl breakpoint for 1920px+ */
+@media (min-width: 1920px) {
+  .\33xl\:px-64 {
+    padding-left: 20rem; /* 64 × 0.25rem */
+    padding-right: 20rem;
+  }
+  .\33xl\:px-56 {
+    padding-left: 17rem; /* 64 × 0.25rem */
+    padding-right: 17rem;
+  }
+  .\33xl\:pl-64 {
+    padding-left: 20rem; /* 64 × 0.25rem */
+    padding-right: 20rem;
+  }
+  .left-navigate {
+    left: 200px;
+  }
+  .right-navigate {
+    right: 200px;
+  }
+}
+/* } */
